@@ -1,10 +1,215 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NoorLife</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #1e1e1e;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  background: #f2f2f2;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* HEADER */
+.header {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+              url('https://images.unsplash.com/photo-1581092919535-9e68a7cdd9c5');
+  background-size: cover;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.header h2 {
+  margin: 10px 0;
+}
+
+.time {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.prayer-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* SECTION TITLE */
+.section {
+  padding: 15px;
+}
+
+.section h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.card {
+  background: #b0003a;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* HADITH */
+.hadith {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* FEATURES GREEN */
+.green .card {
+  background: #0f766e;
+}
+
+/* ZIKR */
+.zikr-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.zikr {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.count {
+  color: red;
+  margin-top: 5px;
+}
+
+/* VERSE */
+.verse {
+  background: linear-gradient(45deg,#a3002f,#ff4d6d);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background: #0f766e;
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+</style>
+
 </head>
+
 <body>
-    <h1>Hello World 🔥</h1>
-    <p>My first GitHub website</p>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h2>NoorLife</h2>
+    <p>Assalamu Alaikum, Tariqul 🌙</p>
+    <div class="time">04:41 AM</div>
+
+    <div class="prayer-row">
+      <div>Fajr<br>04:41</div>
+      <div>Dhuhr<br>04:41</div>
+      <div>Asr<br>04:41</div>
+      <div>Maghrib<br>04:41</div>
+      <div>Isha<br>04:41</div>
+    </div>
+  </div>
+
+  <!-- CORE FEATURES -->
+  <div class="section">
+    <h3>CORE FEATURES</h3>
+    <div class="grid">
+      <div class="card">Quran</div>
+      <div class="card">Mosque</div>
+      <div class="card">Scanner</div>
+      <div class="card">Umrah</div>
+    </div>
+  </div>
+
+  <!-- HADITH -->
+  <div class="section">
+    <h3>AI ASSISTANT</h3>
+    <div class="hadith">
+      <b>Daily Hadith</b><br><br>
+      “Make things easy and do not make them difficult…”
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="section green">
+    <h3>FEATURES</h3>
+    <div class="grid">
+      <div class="card">Quran</div>
+      <div class="card">Hadith</div>
+      <div class="card">Tasbe</div>
+      <div class="card">Qibla</div>
+      <div class="card">Dua</div>
+      <div class="card">99 Name</div>
+      <div class="card">Name</div>
+    </div>
+  </div>
+
+  <!-- ZIKR -->
+  <div class="section">
+    <h3>DAILY ZIKR</h3>
+    <div class="zikr-grid">
+      <div class="zikr">Astaghfirullah<div class="count">0/100</div></div>
+      <div class="zikr">SubhanAllah<div class="count">0/33</div></div>
+      <div class="zikr">Alhamdulillah<div class="count">0/33</div></div>
+      <div class="zikr">Allahu Akbar<div class="count">0/33</div></div>
+    </div>
+  </div>
+
+  <!-- VERSE -->
+  <div class="section">
+    <div class="verse">
+      <h3>Verse of the Day</h3>
+      “Indeed, Allah is with the patient”
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div>Home</div>
+    <div>Quran</div>
+    <div>AI</div>
+    <div>Tasbih</div>
+  </div>
+
+</div>
+
 </body>
 </html>
